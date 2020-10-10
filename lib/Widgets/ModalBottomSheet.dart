@@ -14,8 +14,6 @@ class ModalBottomSheet extends StatefulWidget {
 
 class _ModalBottomSheetState extends State<ModalBottomSheet> {
 
-  _ModalBottomSheetState _modalBottomSheetState = _ModalBottomSheetState();
-  // Model model = Model();
 
   String phoneNo, smssent, verificationId;
 
