@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "201517530520",
+    "firebase_url": "https://aarogyasetu-bd6e2.firebaseio.com",
+    "project_id": "aarogyasetu-bd6e2",
+    "storage_bucket": "aarogyasetu-bd6e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201517530520:android:f4625e542452242a79bfed",
+        "android_client_info": {
+          "package_name": "com.example.aarogya_setu_harsh_flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201517530520-qi2n5qus88h7bbf81r0o6mtmmmpk1s94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMVcKim-H1UDzQsbXbbZRW9wPF7AUmL0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "201517530520-qi2n5qus88h7bbf81r0o6mtmmmpk1s94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
