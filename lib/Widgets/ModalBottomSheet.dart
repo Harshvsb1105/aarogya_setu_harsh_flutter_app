@@ -1,5 +1,4 @@
 
-import 'package:aarogya_setu_harsh_flutter_app/Model/Model.dart';
 import 'package:aarogya_setu_harsh_flutter_app/Screens/WelcomeScreen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -20,9 +19,12 @@ class _ModalBottomSheetState extends State<ModalBottomSheet> {
   get verifiedSuccess => null;
 
   Future<void> verifyPhone() async{
+    /// Typedef for handling automatic phone number timeout resolution.
     final PhoneCodeAutoRetrievalTimeout autoRetrieve = (String verId){
       this.verificationId = verId;
     };
+    /// Typedef for handling when Firebase sends a SMS code to the provided phone
+    /// number.
     final PhoneCodeSent smsCodeSent= (String verId, [int forceCodeResent]) {
       this.verificationId = verId;
       smsCodeDialogue(context).then((value){
@@ -48,7 +50,7 @@ class _ModalBottomSheetState extends State<ModalBottomSheet> {
     return showDialog(context: context,
         barrierDismissible: false,
         builder: (BuildContext context){
-          return new AlertDialog(
+          return AlertDialog(
             title: Text('Enter OTP'),
             content: TextField(
               onChanged: (value){
